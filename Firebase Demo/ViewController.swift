@@ -7,10 +7,11 @@
 
 import UIKit
 import FirebaseAnalytics
-import FirebaseRemoteConfig
 
 class ViewController: UIViewController {
-
+    
+    @IBOutlet weak var lblFirebaseDemo: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -20,7 +21,8 @@ class ViewController: UIViewController {
 //          AnalyticsParameterContentType: "cont",
 //        ])
         
-        Analytics.logEvent("User Visits ViewController", parameters: nil)
+        Analytics.logEvent("User_Visits_ViewController", parameters: nil)
+        lblFirebaseDemo.text = RemoteConfigManager.shared.getValue(forKey: "appTitle")
     }
 
     @IBAction func btnCrash(_ sender: UIButton) {

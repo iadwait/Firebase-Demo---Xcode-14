@@ -28,14 +28,26 @@
                                     <action selector="btnCrash:" destination="BYZ-38-t0r" eventType="touchUpInside" id="heI-dz-Xzr"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Firebase Demo" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ui5-l4-ztC">
+                                <rect key="frame" x="20" y="57" width="350" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="5Yw-v7-dfv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8TV-Nq-gjR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ui5-l4-ztC" secondAttribute="trailing" constant="20" id="FTu-xu-4Yl"/>
                             <constraint firstItem="5Yw-v7-dfv" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="HzU-Jw-wB5"/>
+                            <constraint firstItem="ui5-l4-ztC" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="g1v-2s-O8d"/>
+                            <constraint firstItem="ui5-l4-ztC" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="wyY-zv-1lp"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="lblFirebaseDemo" destination="ui5-l4-ztC" id="aaD-Xw-Ham"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
