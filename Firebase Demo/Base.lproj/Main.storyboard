@@ -17,10 +17,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Yw-v7-dfv">
-                                <rect key="frame" x="157.66666666666666" y="404.66666666666669" width="75" height="35"/>
+                                <rect key="frame" x="95" y="404.66666666666669" width="200" height="35"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="LMr-tg-jLB"/>
-                                    <constraint firstAttribute="width" constant="75" id="dEc-S7-ptU"/>
+                                    <constraint firstAttribute="width" constant="200" id="dEc-S7-ptU"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Button"/>
@@ -46,6 +46,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="btnCrash" destination="5Yw-v7-dfv" id="Y7Q-Wd-EE6"/>
                         <outlet property="lblFirebaseDemo" destination="ui5-l4-ztC" id="aaD-Xw-Ham"/>
                     </connections>
                 </viewController>
